@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagerGraph version="2020.1.1" design_name="Manager_GRURnn" compilation_phase="Original" hardwareBuild="false">
+	<Node id="4" instanceName="xt" type="Input">
+		<Output clock="PCIE" name="xt" type="PUSH 2" width="128">
+			<Stream name="Stream_5" sink="0" />
+		</Output>
+	</Node>
+	<Node id="7" instanceName="Uz" type="Input">
+		<Output clock="PCIE" name="Uz" type="PUSH 2" width="128">
+			<Stream name="Stream_8" sink="0" />
+		</Output>
+	</Node>
+	<Node id="1" instanceName="ht" type="Input">
+		<Output clock="PCIE" name="ht" type="PUSH 2" width="128">
+			<Stream name="Stream_2" sink="0" />
+		</Output>
+	</Node>
+	<Node id="19" instanceName="Uh" type="Input">
+		<Output clock="PCIE" name="Uh" type="PUSH 2" width="128">
+			<Stream name="Stream_20" sink="0" />
+		</Output>
+	</Node>
+	<Node id="10" instanceName="Wz" type="Input">
+		<Output clock="PCIE" name="Wz" type="PUSH 2" width="128">
+			<Stream name="Stream_11" sink="0" />
+		</Output>
+	</Node>
+	<Node id="22" instanceName="Wh" type="Input">
+		<Output clock="PCIE" name="Wh" type="PUSH 2" width="128">
+			<Stream name="Stream_23" sink="0" />
+		</Output>
+	</Node>
+	<Node id="16" instanceName="Wr" type="Input">
+		<Output clock="PCIE" name="Wr" type="PUSH 2" width="128">
+			<Stream name="Stream_17" sink="0" />
+		</Output>
+	</Node>
+	<Node id="13" instanceName="Ur" type="Input">
+		<Output clock="PCIE" name="Ur" type="PUSH 2" width="128">
+			<Stream name="Stream_14" sink="0" />
+		</Output>
+	</Node>
+	<Node id="0" instanceName="GRURnnKernel" type="Kernel">
+		<PxgFile phase="original">GRURnn-GRURnnKernel-original.pxg</PxgFile>
+		<Input clock="STREAM" name="ht" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_3" source="1" />
+		</Input>
+		<Input clock="STREAM" name="xt" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_6" source="4" />
+		</Input>
+		<Input clock="STREAM" name="Uz" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_9" source="7" />
+		</Input>
+		<Input clock="STREAM" name="Wz" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_12" source="10" />
+		</Input>
+		<Input clock="STREAM" name="Ur" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_15" source="13" />
+		</Input>
+		<Input clock="STREAM" name="Wr" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_18" source="16" />
+		</Input>
+		<Input clock="STREAM" name="Uh" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_21" source="19" />
+		</Input>
+		<Input clock="STREAM" name="Wh" type="PULL el=1 ael=2" width="32">
+			<Stream name="Stream_24" source="22" />
+		</Input>
+		<Output clock="STREAM" name="vecOutput" type="PUSH 5" width="32">
+			<Stream name="Stream_27" sink="25" />
+		</Output>
+	</Node>
+	<Node id="25" instanceName="vecOutput" type="Output">
+		<Input clock="PCIE" name="vecOutput" type="PUSH 1" width="128">
+			<Stream name="Stream_26" source="0" />
+		</Input>
+	</Node>
+</ManagerGraph>

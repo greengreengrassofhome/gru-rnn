@@ -1,0 +1,22 @@
+Sat Dec 26 18:55:31 UTC 2020
+GRURnnKernel
+original
+GRURnnKernel_original.dot
+pre_dsp_extraction
+GRURnnKernel_pre_dsp_extraction.dot
+post_dsp_extraction
+GRURnnKernel_post_dsp_extraction.dot
+post_tri_add_extraction
+GRURnnKernel_post_tri_add_extraction.dot
+pre_condadd_extraction
+GRURnnKernel_pre_condadd_extraction.dot
+optimised
+GRURnnKernel_optimised.dot
+tapnfold_1
+GRURnnKernel_tapnfold_1.dot
+validated_fifos
+GRURnnKernel_validated_fifos.dot
+tapnfold_2
+GRURnnKernel_tapnfold_2.dot
+final
+GRURnnKernel_final.dot

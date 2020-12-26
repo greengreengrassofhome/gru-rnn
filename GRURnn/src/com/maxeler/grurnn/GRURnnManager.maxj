@@ -1,0 +1,103 @@
+package com.maxeler.grurnn;
+
+import com.maxeler.maxcompiler.v2.build.EngineParameters;
+
+import com.maxeler.maxcompiler.v2.build.EngineParameters;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.managers.custom.DFELink;
+import com.maxeler.maxcompiler.v2.managers.custom.blocks.KernelBlock;
+import com.maxeler.maxcompiler.v2.managers.custom.stdlib.LMemCommandGroup;
+import com.maxeler.maxcompiler.v2.managers.custom.stdlib.LMemInterface;
+import com.maxeler.maxcompiler.v2.managers.engine_interfaces.CPUTypes;
+import com.maxeler.maxcompiler.v2.managers.engine_interfaces.EngineInterface;
+import com.maxeler.maxcompiler.v2.managers.engine_interfaces.EngineInterface.Direction;
+import com.maxeler.maxcompiler.v2.managers.engine_interfaces.InterfaceParam;
+import com.maxeler.platform.max5.manager.MAX5CManager;
+
+@SuppressWarnings("unused")
+public class GRURnnManager extends MAX5CManager {
+
+	public static final String kernelName = "GRURnnKernel";
+	public static final int hSize = 52; //20*1024; 101 dalmatinac
+	public static final int N = 20;
+	
+	public GRURnnManager(EngineParameters params) {
+		super(params);
+
+		final KernelBlock kernel = addKernel(new GRURnnKernel(makeKernelParameters(kernelName), hSize, N));
+		
+		// vectors
+		DFELink ht = addStreamFromCPU("ht");
+		kernel.getInput("ht") <== ht;
+		
+		DFELink xt = addStreamFromCPU("xt");
+		kernel.getInput("xt") <== xt;
+		
+		// matrices
+		DFELink Uz = addStreamFromCPU("Uz");
+		kernel.getInput("Uz") <== Uz;
+		
+		DFELink Wz = addStreamFromCPU("Wz");
+		kernel.getInput("Wz") <== Wz;
+		
+		DFELink Ur = addStreamFromCPU("Ur");
+		kernel.getInput("Ur") <== Ur;
+		
+		DFELink Wr = addStreamFromCPU("Wr");
+		kernel.getInput("Wr") <== Wr;
+		
+		DFELink Uh = addStreamFromCPU("Uh");
+		kernel.getInput("Uh") <== Uh;
+		
+		DFELink Wh = addStreamFromCPU("Wh");
+		kernel.getInput("Wh") <== Wh;
+		
+		
+		DFELink vecOutput = addStreamToCPU("vecOutput");
+		vecOutput <== kernel.getOutput("vecOutput");
+		
+		
+		createSlicInterface(interfaceDefault());
+	}
+
+	public static void main(final String[] argv) {
+		final EngineParameters params = new EngineParameters(argv);
+		final GRURnnManager manager = new GRURnnManager(params);
+		
+		manager.build();
+	}
+	
+	static EngineInterface interfaceDefault() {
+		EngineInterface ei = new EngineInterface();
+
+		InterfaceParam matrixLength = ei.addParam("matrixLength", CPUTypes.INT);
+		InterfaceParam WxLength = ei.addParam("WxLength", CPUTypes.INT);
+		InterfaceParam hsize = ei.addParam("hsize", CPUTypes.INT);
+		InterfaceParam n = ei.addParam("n", CPUTypes.INT);
+		InterfaceParam loopLength = ei.getAutoLoopOffset("GRURnnKernel", "loopLength");
+		ei.ignoreAutoLoopOffset("GRURnnKernel", "loopLength");
+		
+		InterfaceParam lengthInBytes = matrixLength * CPUTypes.FLOAT.sizeInBytes();
+
+		ei.setTicks("GRURnnKernel", matrixLength * loopLength);
+
+		ei.setScalar("GRURnnKernel", "hsize", hsize);
+		ei.setScalar("GRURnnKernel", "n", n);
+		ei.setStream("ht", CPUTypes.FLOAT, CPUTypes.FLOAT.sizeInBytes() * hsize);
+		ei.setStream("xt", CPUTypes.FLOAT, CPUTypes.FLOAT.sizeInBytes() * n);
+		ei.setStream("Uz", CPUTypes.FLOAT, lengthInBytes);
+		ei.setStream("Wz", CPUTypes.FLOAT, CPUTypes.FLOAT.sizeInBytes() * WxLength);
+		ei.setStream("Ur", CPUTypes.FLOAT, lengthInBytes);
+		ei.setStream("Wr",  CPUTypes.FLOAT,  CPUTypes.FLOAT.sizeInBytes() * WxLength);
+		ei.setStream("Uh", CPUTypes.FLOAT, lengthInBytes);
+		ei.setStream("Wh",  CPUTypes.FLOAT,  CPUTypes.FLOAT.sizeInBytes() * WxLength);
+//		
+		ei.setStream("vecOutput", CPUTypes.FLOAT, CPUTypes.FLOAT.sizeInBytes() * hsize);
+
+		return ei;
+	}
+	
+	
+
+}

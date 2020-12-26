@@ -1,0 +1,141 @@
+package com.maxeler.grurnn;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Stream.OffsetExpr;
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.memory.Memory;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEType;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+
+import com.maxeler.maxcompiler.v2.utils.MathUtils;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.Mem.RamWriteMode;
+
+@SuppressWarnings("unused")
+public class GRURnnKernel extends Kernel {
+
+	final DFEType floatType = dfeFloat(8,24);
+	final DFEType intType = dfeUInt(32);
+	
+	public GRURnnKernel(final KernelParameters parameters, int hSize, int N) {
+		super(parameters);
+
+		final int addrBitshSize = MathUtils.bitsToAddress(hSize+1);
+		final int addrBitsN = MathUtils.bitsToAddress(N+1);
+		DFEType addrTypehSize = dfeUInt(addrBitshSize);
+		DFEType addrTypeN = dfeUInt(addrBitsN);
+		DFEVar hsize = io.scalarInput("hsize", addrTypehSize);
+		DFEVar n = io.scalarInput("n", addrTypeN);
+		
+		OffsetExpr loopLength = stream.makeOffsetAutoLoop("loopLength");
+		DFEVar loopLengthVal = loopLength.getDFEVar(this, dfeUInt(16));
+		CounterChain chain = control.count.makeCounterChain();
+		DFEVar wzi = chain.addCounter(hSize, 1);
+		DFEVar wzj = chain.addCounter(hSize, 1);
+		DFEVar loopCounter = chain.addCounter(loopLengthVal, 1);
+		
+		
+		
+		
+		DFEVar htRead = wzi === 0 & loopCounter === 0 & wzj < hSize;
+		DFEVar htIn = io.input("ht", dfeFloat(8,24), htRead);
+		
+		DFEVar xtRead = wzi === 0 & loopCounter === 0 & wzj < N;
+		DFEVar xtIn = io.input("xt", dfeFloat(8,24), xtRead);
+		
+		
+		Memory<DFEVar> htRam = mem.alloc(dfeFloat(8,24), hSize+1);
+		htRam.write(wzj, htIn, htRead);
+		
+		Memory<DFEVar> xtRam = mem.alloc(dfeFloat(8,24), N + 1);
+		xtRam.write(wzj.cast(dfeUInt(MathUtils.bitsToAddress(N + 1))), xtIn, xtRead);
+
+		
+		
+		// why we use int when < or > to compare with DFEVar counter variables
+		// and we use DFEVars with DFEVars when === ?
+		DFEVar ht = wzi === 0 & loopCounter === 0  & wzj < hSize ? htIn : htRam.read(wzj);
+		ht = wzj > hsize ? 0 : ht;
+		DFEVar xt = wzi === 0 & loopCounter === 0 & wzj < N ? xtIn : xtRam.read(wzj.cast(dfeUInt(MathUtils.bitsToAddress(N + 1))));
+		xt = wzj > N ? 0 : xt;
+		
+		DFEVar Uz = io.input("Uz", floatType, loopCounter === (loopLengthVal - 1));
+		DFEVar Wz = io.input("Wz", floatType, loopCounter === (loopLengthVal - 1) & wzj < N);
+		DFEVar Ur = io.input("Ur", floatType, loopCounter === (loopLengthVal - 1));
+		DFEVar Wr = io.input("Wr", floatType, loopCounter === (loopLengthVal - 1) & wzj < N);
+		DFEVar Uh = io.input("Uh", floatType, loopCounter === (loopLengthVal - 1));
+		DFEVar Wh = io.input("Wh", floatType, loopCounter === (loopLengthVal - 1) & wzj < N);
+		
+		// gate update carried sum
+		DFEVar gucSum = floatType.newInstance(this);
+		DFEVar gubSum = wzj === 0 ? 0.0 : gucSum;
+		DFEVar gunSum = wzj < N ? Uz * ht + Wz*xt + gubSum : Uz * ht + gubSum;
+		
+		// gate reset carried sum 
+		DFEVar grcSum = floatType.newInstance(this); // carried sum
+		DFEVar grbSum = wzj === 0 ? 0.0 : grcSum; // base sum
+		DFEVar grnSum = wzj < N ? Ur * ht + Wr*xt + grbSum : Ur * ht + grbSum;
+		
+		// hidden carried sum
+		DFEVar hhcSum = floatType.newInstance(this);
+		DFEVar xhcSum = floatType.newInstance(this);
+		DFEVar hhSum = wzj === 0 ? 0.0 : hhcSum;
+		DFEVar xhSum = wzj === 0 ? 0.0 : xhcSum;
+		DFEVar hhnSum = Uh * ht + hhSum;
+		DFEVar xhnSum = (wzj < N )? Wh * xt + xhSum : xhcSum;
+		
+		// 
+		
+		
+		
+		gucSum <== stream.offset(gunSum, -loopLength);
+		grcSum <== stream.offset(grnSum, -loopLength);
+		hhcSum <== stream.offset(hhnSum, -loopLength);
+		xhcSum <== stream.offset(xhnSum, -loopLength);
+		
+		DFEVar gReset = wzj === (hsize - 1) & 
+				loopCounter === (loopLengthVal-1) ? sigmoid(grnSum) : 0.0;
+		DFEVar r = wzj === (hsize - 1) & 
+				loopCounter === (loopLengthVal-1) ? tanh(gReset * hhnSum + xhnSum) : 0.0;
+		DFEVar gUpdate = wzj === (hsize - 1) & 
+				loopCounter === (loopLengthVal-1) ? sigmoid(gunSum) : 0.0;
+		DFEVar htNew = wzj === (hsize - 1) & 
+				loopCounter === (loopLengthVal-1) ? r * (1.0 - gUpdate) + gUpdate * htRam.read(wzi) : 0.0; // htRam.read(wzi);
+		
+		
+		io.output("vecOutput",  
+				htNew, 
+				floatType, wzj === (hsize - 1) & 
+				loopCounter === (loopLengthVal-1));
+		
+		
+	}
+	public DFEVar sigmoid(DFEVar x) {
+//		DFEVar tmpX = x > 0 ? x : -x; // abs of x
+		// return PWL of sigmoid function
+		return  x < -5 ? 0 :
+			x >= -5 & x < -2.375 ? 0.03125 * x + 0.15625 :
+			x >= -2.375 & x < -1 ? 0.125 * x + 0.375 :
+			x >= -1 & x < 0 ? 0.25 * x + 0.5 :
+			x >= 0 & x < 1 ? 0.25*x + 0.5 :
+			x >= 1 & x < 2.375 ? 0.125 * x + 0.625 : 
+			x >= 2.375 & x < 5 ? 0.03125 * x + 0.84375 : 1;
+		
+	}
+	public DFEVar tanh(DFEVar x) {
+		return x <= -7.0 ? -1.0 :
+			x > -7.0 & x <= -3.0 ? 0.0012 * x - 0.9914 :
+			x > -3.0 & x <= -1.6 ? 0.0524 * x - 0.8378 :
+			x > -1.6 & x <= -0.8 ? 0.322 * x - 0.4064 : 
+			x > -0.8 & x <= 0.8 ? 0.83 * x :
+			x > 0.8 & x <= 1.6 ? 0.322 * x + 0.4864 :
+			x > 1.6 & x <= 3.0 ? 0.0524 * x + 0.8378 : 
+			x > 3.0 & x <= 7.0 ? 0.0012 * x + 0.9914 :
+			1;
+			
+	}
+
+}

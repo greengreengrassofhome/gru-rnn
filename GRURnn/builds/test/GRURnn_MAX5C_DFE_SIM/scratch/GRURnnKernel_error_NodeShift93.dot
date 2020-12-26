@@ -1,0 +1,34 @@
+digraph GRURnnKernel_error_NodeShift93{
+	NodeMux89 [shape=invtrapezium, height=0.5, label="MUX\nID: 89"];
+	NodeConstantDouble91 [shape=box, label="1.0\nID: 91"];
+	NodeStreamOffset90 [shape=diamond, label="-loopLength\nID: 90"];
+	NodeAdd86 [label="+\nID: 86"];
+	NodeCast92 [label="NodeCast
+{HWFloat:8, 24} 
+->
+ {HWOffsetFix:32, 0, UNSIGNED}\nID: 92"];
+	NodeLt82 [label="<\nID: 82"];
+	NodeShift93 [color=red, style="bold, filled", fillcolor=yellow, label="<<\nID: 93"];
+	NodeAdd88 [label="+\nID: 88"];
+	NodeLt82 -> NodeMux89[headport="w" color="/dark28/1" photon_data="EDGE,SrcNode:82,SrcNodePort:result"];
+	NodeAdd88 -> NodeMux89[color="/dark28/2" photon_data="EDGE,SrcNode:88,SrcNodePort:result"];
+	NodeAdd86 -> NodeMux89[color="/dark28/3" photon_data="EDGE,SrcNode:86,SrcNodePort:result"];
+	NodeMux89 -> NodeStreamOffset90[color="/dark28/4" photon_data="EDGE,SrcNode:89,SrcNodePort:result"];
+	NodeMux80 [shape=point];
+	NodeStreamOffset90 -> NodeMux80 [label="(-loopLength)"];
+	NodeAdd85 [shape=point];
+	NodeAdd85 -> NodeAdd86[color="/dark28/5" photon_data="EDGE,SrcNode:85,SrcNodePort:result"];
+	NodeMux80 [shape=point];
+	NodeMux80 -> NodeAdd86[color="/dark28/6" photon_data="EDGE,SrcNode:80,SrcNodePort:result"];
+	NodeMux89 -> NodeCast92[color="/dark28/7" photon_data="EDGE,SrcNode:89,SrcNodePort:result"];
+	NodeCounter7 [shape=point];
+	NodeCounter7 -> NodeLt82[color="/dark28/8" photon_data="EDGE,SrcNode:7,SrcNodePort:count"];
+	NodeConstantDouble81 [shape=point];
+	NodeConstantDouble81 -> NodeLt82[color="/dark28/1" photon_data="EDGE,SrcNode:81,SrcNodePort:value"];
+	NodeConstantDouble91 -> NodeShift93[color="/dark28/2" photon_data="EDGE,SrcNode:91,SrcNodePort:value"];
+	NodeCast92 -> NodeShift93[color="/dark28/3" photon_data="EDGE,SrcNode:92,SrcNodePort:o"];
+	NodeMul87 [shape=point];
+	NodeMul87 -> NodeAdd88[color="/dark28/4" photon_data="EDGE,SrcNode:87,SrcNodePort:result"];
+	NodeMux80 [shape=point];
+	NodeMux80 -> NodeAdd88[color="/dark28/5" photon_data="EDGE,SrcNode:80,SrcNodePort:result"];
+}

@@ -1,0 +1,38 @@
+Top 10 largest FIFOs
+     Costs                                              From                                                To
+         3                             GRURnnKernel.maxj:102                             GRURnnKernel.maxj:133
+         2                             GRURnnKernel.maxj:123                             GRURnnKernel.maxj:119
+         2                             GRURnnKernel.maxj:119                             GRURnnKernel.maxj:119
+         2                             GRURnnKernel.maxj:102                             GRURnnKernel.maxj:134
+         2                             GRURnnKernel.maxj:102                             GRURnnKernel.maxj:132
+         2                             GRURnnKernel.maxj:102                             GRURnnKernel.maxj:131
+         2                             GRURnnKernel.maxj:102                             GRURnnKernel.maxj:130
+         2                              GRURnnKernel.maxj:80                              GRURnnKernel.maxj:80
+         2                             GRURnnKernel.maxj:120                             GRURnnKernel.maxj:119
+         2                             GRURnnKernel.maxj:124                             GRURnnKernel.maxj:119
+
+Top 10 lines with FIFO sinks
+     Costs                                              LineFIFO Count
+        14                             GRURnnKernel.maxj:119         7
+         8                             GRURnnKernel.maxj:129         8
+         5                              GRURnnKernel.maxj:75         5
+         4                              GRURnnKernel.maxj:88         4
+         3                             GRURnnKernel.maxj:106         3
+         3                              GRURnnKernel.maxj:50         3
+         3                              GRURnnKernel.maxj:80         3
+         3                             GRURnnKernel.maxj:133         1
+         2                              GRURnnKernel.maxj:74         2
+         2                              GRURnnKernel.maxj:86         2
+
+Top 10 lines with FIFO sources
+     Costs                                              LineFIFO Count
+        16                             GRURnnKernel.maxj:102         8
+        10                              GRURnnKernel.maxj:37        10
+         2                             GRURnnKernel.maxj:106         2
+         2                              GRURnnKernel.maxj:75         2
+         2                              GRURnnKernel.maxj:80         2
+         2                             GRURnnKernel.maxj:122         1
+         2                             GRURnnKernel.maxj:123         1
+         2                             GRURnnKernel.maxj:120         1
+         2                             GRURnnKernel.maxj:121         1
+         2                             GRURnnKernel.maxj:124         1

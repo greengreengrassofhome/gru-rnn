@@ -1,0 +1,88 @@
+*** After kernel graph-pass 'Init Graph' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'Init Graph' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'RemoveUntypedConstants' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'DeleteRedundantNodes' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'OptimiseNodesPass' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'PO2FPMultOptimiser' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'SubstituteEqPlaceholders' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'SubstituteEqPlaceholders' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'ScheduleApplier' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'TapFIFOsPass' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	
+*** After kernel graph-pass 'ReplaceEvalStreamOffsetNodes' ***
+node "Scalar input (n)" (ID 1) has unconnected outputs: [n]
+stack trace of node origin follows:
+	com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.scalarInput(IO.java:1193)
+	com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:31)
+	com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+	com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	

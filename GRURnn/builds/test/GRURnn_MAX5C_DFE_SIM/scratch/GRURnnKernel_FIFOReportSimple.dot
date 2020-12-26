@@ -1,0 +1,215 @@
+digraph fifoReportGraph {
+	NodeGRURnnKernel99 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 99"];
+	NodeGRURnnKernel54 [shape=house, label="GRURnnKernel.maxj\nline: 54"];
+	NodeGRURnnKernel75 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 75"];
+	NodeGRURnnKernel53 [shape=house, label="GRURnnKernel.maxj\nline: 53"];
+	NodeGRURnnKernel97 [shape=invhouse, label="GRURnnKernel.maxj\nline: 97"];
+	NodeGRURnnKernel106 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 106"];
+	NodeGRURnnKernel74 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 74"];
+	NodeGRURnnKernel129 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 129"];
+	NodeGRURnnKernel50 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 50"];
+	NodeGRURnnKernel70 [shape=invhouse, label="GRURnnKernel.maxj\nline: 70"];
+	NodeGRURnnKernel37 [shape=invhouse, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 37"];
+	NodeGRURnnKernel36 [shape=invhouse, label="GRURnnKernel.maxj\nline: 36"];
+	NodeGRURnnKernel79 [shape=house, label="GRURnnKernel.maxj\nline: 79"];
+	NodeGRURnnKernel80 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 80"];
+	NodeGRURnnKernel122 [shape=invhouse, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 122"];
+	NodeGRURnnKernel101 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 101"];
+	NodeGRURnnKernel123 [shape=invhouse, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 123"];
+	NodeGRURnnKernel120 [shape=invhouse, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 120"];
+	NodeGRURnnKernel121 [shape=invhouse, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 121"];
+	NodeGRURnnKernel105 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 105"];
+	NodeGRURnnKernel124 [shape=invhouse, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 124"];
+	NodeGRURnnKernel102 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 102"];
+	NodeGRURnnKernel125 [shape=invhouse, label="GRURnnKernel.maxj\nline: 125"];
+	NodeGRURnnKernel103 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 103"];
+	NodeGRURnnKernel88 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 88"];
+	NodeGRURnnKernel119 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 119"];
+	NodeGRURnnKernel66 [shape=invhouse, label="GRURnnKernel.maxj\nline: 66"];
+	NodeGRURnnKernel43 [shape=invhouse, label="GRURnnKernel.maxj\nline: 43"];
+	NodeGRURnnKernel87 [shape=house, label="GRURnnKernel.maxj\nline: 87"];
+	NodeGRURnnKernel65 [shape=invhouse, label="GRURnnKernel.maxj\nline: 65"];
+	NodeGRURnnKernel86 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 86"];
+	NodeGRURnnKernel85 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 85"];
+	NodeGRURnnKernel63 [shape=invhouse, label="GRURnnKernel.maxj\nline: 63"];
+	NodeGRURnnKernel62 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 62"];
+	NodeGRURnnKernel61 [shape=invhouse, label="GRURnnKernel.maxj\nline: 61"];
+	NodeGRURnnKernel60 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 60"];
+	NodeGRURnnKernel69 [shape=invhouse, label="GRURnnKernel.maxj\nline: 69"];
+	NodeGRURnnKernel68 [shape=invhouse, label="GRURnnKernel.maxj\nline: 68"];
+	NodeGRURnnKernel46 [shape=invhouse, label="GRURnnKernel.maxj\nline: 46"];
+	NodeGRURnnKernel67 [shape=invhouse, label="GRURnnKernel.maxj\nline: 67"];
+	NodeGRURnnKernel130 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 130"];
+	NodeGRURnnKernel133 [shape=hexagon, orientation=90, style=filled, fillcolor=red, label="GRURnnKernel.maxj\nline: 133"];
+	NodeGRURnnKernel112 [shape=invhouse, label="GRURnnKernel.maxj\nline: 112"];
+	NodeGRURnnKernel134 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 134"];
+	NodeGRURnnKernel131 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 131"];
+	NodeGRURnnKernel132 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 132"];
+	NodeGRURnnKernel135 [shape=hexagon, orientation=90, label="GRURnnKernel.maxj\nline: 135"];
+	NodeGRURnnKernel136 [shape=house, label="GRURnnKernel.maxj\nline: 136"];
+	NodeGRURnnKernel102NodeGRURnnKernel133FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 3 \n"];
+	NodeGRURnnKernel123NodeGRURnnKernel119FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel119NodeGRURnnKernel119FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel134FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel132FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel131FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel130FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel80NodeGRURnnKernel80FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel120NodeGRURnnKernel119FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel124NodeGRURnnKernel119FIFO [shape=box, style=filled, fillcolor=red, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel136FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel135FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel121NodeGRURnnKernel119FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel125NodeGRURnnKernel119FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel106NodeGRURnnKernel106FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel75NodeGRURnnKernel75FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel122NodeGRURnnKernel119FIFO [shape=box, label="TotalCosts: 2 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel86FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel88NodeGRURnnKernel102FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel36NodeGRURnnKernel50FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel85FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel130NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel88FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel134NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel102NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel80FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel61NodeGRURnnKernel75FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel99NodeGRURnnKernel99FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel62NodeGRURnnKernel62FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel88NodeGRURnnKernel88FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel75FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel74FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel79FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel43NodeGRURnnKernel50FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel131NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel135NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel105NodeGRURnnKernel105FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel101NodeGRURnnKernel101FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel63NodeGRURnnKernel88FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel62FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel46NodeGRURnnKernel53FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel132NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel50NodeGRURnnKernel106FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel60NodeGRURnnKernel60FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel86NodeGRURnnKernel86FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel63NodeGRURnnKernel75FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel54FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel133NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37NodeGRURnnKernel50FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel129NodeGRURnnKernel129FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel103NodeGRURnnKernel103FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel97NodeGRURnnKernel88FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel85NodeGRURnnKernel85FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel74NodeGRURnnKernel74FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel61NodeGRURnnKernel87FIFO [shape=box, label="TotalCosts: 1 \n"];
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel86FIFO[color="/dark28/1"]
+	NodeGRURnnKernel37NodeGRURnnKernel86FIFO -> NodeGRURnnKernel86[color="/dark28/2"]
+	NodeGRURnnKernel88 -> NodeGRURnnKernel88NodeGRURnnKernel102FIFO[color="/dark28/3"]
+	NodeGRURnnKernel88NodeGRURnnKernel102FIFO -> NodeGRURnnKernel102[color="/dark28/4"]
+	NodeGRURnnKernel36 -> NodeGRURnnKernel36NodeGRURnnKernel50FIFO[color="/dark28/5"]
+	NodeGRURnnKernel36NodeGRURnnKernel50FIFO -> NodeGRURnnKernel50[color="/dark28/6"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel85FIFO[color="/dark28/7"]
+	NodeGRURnnKernel37NodeGRURnnKernel85FIFO -> NodeGRURnnKernel85[color="/dark28/8"]
+	NodeGRURnnKernel130 -> NodeGRURnnKernel130NodeGRURnnKernel129FIFO[color="/dark28/1"]
+	NodeGRURnnKernel130NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/2"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel88FIFO[color="/dark28/3"]
+	NodeGRURnnKernel37NodeGRURnnKernel88FIFO -> NodeGRURnnKernel88[color="/dark28/4"]
+	NodeGRURnnKernel123 -> NodeGRURnnKernel123NodeGRURnnKernel119FIFO[color="/dark28/5"]
+	NodeGRURnnKernel123NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/6"]
+	NodeGRURnnKernel134 -> NodeGRURnnKernel134NodeGRURnnKernel129FIFO[color="/dark28/7"]
+	NodeGRURnnKernel134NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/8"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel129FIFO[color="/dark28/1"]
+	NodeGRURnnKernel102NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/2"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel80FIFO[color="/dark28/3"]
+	NodeGRURnnKernel37NodeGRURnnKernel80FIFO -> NodeGRURnnKernel80[color="/dark28/4"]
+	NodeGRURnnKernel119 -> NodeGRURnnKernel119NodeGRURnnKernel119FIFO[color="/dark28/5"]
+	NodeGRURnnKernel119NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/6"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel134FIFO[color="/dark28/7"]
+	NodeGRURnnKernel102NodeGRURnnKernel134FIFO -> NodeGRURnnKernel134[color="/dark28/8"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel133FIFO[color="/dark28/1"]
+	NodeGRURnnKernel102NodeGRURnnKernel133FIFO -> NodeGRURnnKernel133[color="/dark28/2"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel132FIFO[color="/dark28/3"]
+	NodeGRURnnKernel102NodeGRURnnKernel132FIFO -> NodeGRURnnKernel132[color="/dark28/4"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel131FIFO[color="/dark28/5"]
+	NodeGRURnnKernel102NodeGRURnnKernel131FIFO -> NodeGRURnnKernel131[color="/dark28/6"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel130FIFO[color="/dark28/7"]
+	NodeGRURnnKernel102NodeGRURnnKernel130FIFO -> NodeGRURnnKernel130[color="/dark28/8"]
+	NodeGRURnnKernel61 -> NodeGRURnnKernel61NodeGRURnnKernel75FIFO[color="/dark28/1"]
+	NodeGRURnnKernel61NodeGRURnnKernel75FIFO -> NodeGRURnnKernel75[color="/dark28/2"]
+	NodeGRURnnKernel99 -> NodeGRURnnKernel99NodeGRURnnKernel99FIFO[color="/dark28/3"]
+	NodeGRURnnKernel99NodeGRURnnKernel99FIFO -> NodeGRURnnKernel99[color="/dark28/4"]
+	NodeGRURnnKernel80 -> NodeGRURnnKernel80NodeGRURnnKernel80FIFO[color="/dark28/5"]
+	NodeGRURnnKernel80NodeGRURnnKernel80FIFO -> NodeGRURnnKernel80[color="/dark28/6"]
+	NodeGRURnnKernel62 -> NodeGRURnnKernel62NodeGRURnnKernel62FIFO[color="/dark28/7"]
+	NodeGRURnnKernel62NodeGRURnnKernel62FIFO -> NodeGRURnnKernel62[color="/dark28/8"]
+	NodeGRURnnKernel88 -> NodeGRURnnKernel88NodeGRURnnKernel88FIFO[color="/dark28/1"]
+	NodeGRURnnKernel88NodeGRURnnKernel88FIFO -> NodeGRURnnKernel88[color="/dark28/2"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel75FIFO[color="/dark28/3"]
+	NodeGRURnnKernel37NodeGRURnnKernel75FIFO -> NodeGRURnnKernel75[color="/dark28/4"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel74FIFO[color="/dark28/5"]
+	NodeGRURnnKernel37NodeGRURnnKernel74FIFO -> NodeGRURnnKernel74[color="/dark28/6"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel79FIFO[color="/dark28/7"]
+	NodeGRURnnKernel37NodeGRURnnKernel79FIFO -> NodeGRURnnKernel79[color="/dark28/8"]
+	NodeGRURnnKernel120 -> NodeGRURnnKernel120NodeGRURnnKernel119FIFO[color="/dark28/1"]
+	NodeGRURnnKernel120NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/2"]
+	NodeGRURnnKernel43 -> NodeGRURnnKernel43NodeGRURnnKernel50FIFO[color="/dark28/3"]
+	NodeGRURnnKernel43NodeGRURnnKernel50FIFO -> NodeGRURnnKernel50[color="/dark28/4"]
+	NodeGRURnnKernel131 -> NodeGRURnnKernel131NodeGRURnnKernel129FIFO[color="/dark28/5"]
+	NodeGRURnnKernel131NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/6"]
+	NodeGRURnnKernel124 -> NodeGRURnnKernel124NodeGRURnnKernel119FIFO[color="/dark28/7"]
+	NodeGRURnnKernel124NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/8"]
+	NodeGRURnnKernel135 -> NodeGRURnnKernel135NodeGRURnnKernel129FIFO[color="/dark28/1"]
+	NodeGRURnnKernel135NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/2"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel136FIFO[color="/dark28/3"]
+	NodeGRURnnKernel102NodeGRURnnKernel136FIFO -> NodeGRURnnKernel136[color="/dark28/4"]
+	NodeGRURnnKernel105 -> NodeGRURnnKernel105NodeGRURnnKernel105FIFO[color="/dark28/5"]
+	NodeGRURnnKernel105NodeGRURnnKernel105FIFO -> NodeGRURnnKernel105[color="/dark28/6"]
+	NodeGRURnnKernel101 -> NodeGRURnnKernel101NodeGRURnnKernel101FIFO[color="/dark28/7"]
+	NodeGRURnnKernel101NodeGRURnnKernel101FIFO -> NodeGRURnnKernel101[color="/dark28/8"]
+	NodeGRURnnKernel102 -> NodeGRURnnKernel102NodeGRURnnKernel135FIFO[color="/dark28/1"]
+	NodeGRURnnKernel102NodeGRURnnKernel135FIFO -> NodeGRURnnKernel135[color="/dark28/2"]
+	NodeGRURnnKernel63 -> NodeGRURnnKernel63NodeGRURnnKernel88FIFO[color="/dark28/3"]
+	NodeGRURnnKernel63NodeGRURnnKernel88FIFO -> NodeGRURnnKernel88[color="/dark28/4"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel62FIFO[color="/dark28/5"]
+	NodeGRURnnKernel37NodeGRURnnKernel62FIFO -> NodeGRURnnKernel62[color="/dark28/6"]
+	NodeGRURnnKernel46 -> NodeGRURnnKernel46NodeGRURnnKernel53FIFO[color="/dark28/7"]
+	NodeGRURnnKernel46NodeGRURnnKernel53FIFO -> NodeGRURnnKernel53[color="/dark28/8"]
+	NodeGRURnnKernel121 -> NodeGRURnnKernel121NodeGRURnnKernel119FIFO[color="/dark28/1"]
+	NodeGRURnnKernel121NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/2"]
+	NodeGRURnnKernel132 -> NodeGRURnnKernel132NodeGRURnnKernel129FIFO[color="/dark28/3"]
+	NodeGRURnnKernel132NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/4"]
+	NodeGRURnnKernel125 -> NodeGRURnnKernel125NodeGRURnnKernel119FIFO[color="/dark28/5"]
+	NodeGRURnnKernel125NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/6"]
+	NodeGRURnnKernel50 -> NodeGRURnnKernel50NodeGRURnnKernel106FIFO[color="/dark28/7"]
+	NodeGRURnnKernel50NodeGRURnnKernel106FIFO -> NodeGRURnnKernel106[color="/dark28/8"]
+	NodeGRURnnKernel106 -> NodeGRURnnKernel106NodeGRURnnKernel106FIFO[color="/dark28/1"]
+	NodeGRURnnKernel106NodeGRURnnKernel106FIFO -> NodeGRURnnKernel106[color="/dark28/2"]
+	NodeGRURnnKernel60 -> NodeGRURnnKernel60NodeGRURnnKernel60FIFO[color="/dark28/3"]
+	NodeGRURnnKernel60NodeGRURnnKernel60FIFO -> NodeGRURnnKernel60[color="/dark28/4"]
+	NodeGRURnnKernel86 -> NodeGRURnnKernel86NodeGRURnnKernel86FIFO[color="/dark28/5"]
+	NodeGRURnnKernel86NodeGRURnnKernel86FIFO -> NodeGRURnnKernel86[color="/dark28/6"]
+	NodeGRURnnKernel75 -> NodeGRURnnKernel75NodeGRURnnKernel75FIFO[color="/dark28/7"]
+	NodeGRURnnKernel75NodeGRURnnKernel75FIFO -> NodeGRURnnKernel75[color="/dark28/8"]
+	NodeGRURnnKernel63 -> NodeGRURnnKernel63NodeGRURnnKernel75FIFO[color="/dark28/1"]
+	NodeGRURnnKernel63NodeGRURnnKernel75FIFO -> NodeGRURnnKernel75[color="/dark28/2"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel54FIFO[color="/dark28/3"]
+	NodeGRURnnKernel37NodeGRURnnKernel54FIFO -> NodeGRURnnKernel54[color="/dark28/4"]
+	NodeGRURnnKernel122 -> NodeGRURnnKernel122NodeGRURnnKernel119FIFO[color="/dark28/5"]
+	NodeGRURnnKernel122NodeGRURnnKernel119FIFO -> NodeGRURnnKernel119[color="/dark28/6"]
+	NodeGRURnnKernel133 -> NodeGRURnnKernel133NodeGRURnnKernel129FIFO[color="/dark28/7"]
+	NodeGRURnnKernel133NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/8"]
+	NodeGRURnnKernel37 -> NodeGRURnnKernel37NodeGRURnnKernel50FIFO[color="/dark28/1"]
+	NodeGRURnnKernel37NodeGRURnnKernel50FIFO -> NodeGRURnnKernel50[color="/dark28/2"]
+	NodeGRURnnKernel129 -> NodeGRURnnKernel129NodeGRURnnKernel129FIFO[color="/dark28/3"]
+	NodeGRURnnKernel129NodeGRURnnKernel129FIFO -> NodeGRURnnKernel129[color="/dark28/4"]
+	NodeGRURnnKernel103 -> NodeGRURnnKernel103NodeGRURnnKernel103FIFO[color="/dark28/5"]
+	NodeGRURnnKernel103NodeGRURnnKernel103FIFO -> NodeGRURnnKernel103[color="/dark28/6"]
+	NodeGRURnnKernel97 -> NodeGRURnnKernel97NodeGRURnnKernel88FIFO[color="/dark28/7"]
+	NodeGRURnnKernel97NodeGRURnnKernel88FIFO -> NodeGRURnnKernel88[color="/dark28/8"]
+	NodeGRURnnKernel85 -> NodeGRURnnKernel85NodeGRURnnKernel85FIFO[color="/dark28/1"]
+	NodeGRURnnKernel85NodeGRURnnKernel85FIFO -> NodeGRURnnKernel85[color="/dark28/2"]
+	NodeGRURnnKernel74 -> NodeGRURnnKernel74NodeGRURnnKernel74FIFO[color="/dark28/3"]
+	NodeGRURnnKernel74NodeGRURnnKernel74FIFO -> NodeGRURnnKernel74[color="/dark28/4"]
+	NodeGRURnnKernel61 -> NodeGRURnnKernel61NodeGRURnnKernel87FIFO[color="/dark28/5"]
+	NodeGRURnnKernel61NodeGRURnnKernel87FIFO -> NodeGRURnnKernel87[color="/dark28/6"]
+}

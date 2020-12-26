@@ -1,0 +1,463 @@
+NodeRAM RAM(RAM_TWO_PORT) {HWFloat:8, 24} ID: 414
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.memory.Memory$Finalizer.finalizeKernel(Memory.java:213)
+com.maxeler.maxcompiler.v2.kernelcompiler.KernelComponent$1.finalizeKernel(KernelComponent.maxj:77)
+com.maxeler.maxcompiler.v2.kernelcompiler.KernelComponent$1.finalizeKernel(KernelComponent.maxj:1)
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(82) {HWFloat:8, 24} 82 ID: 767
+
+NodeMux MUX {HWFloat:8, 24} ID: 45
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1228)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:61)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(31) {HWFloat:8, 24} 31 ID: 677
+
+NodeMux MUX {HWFloat:8, 24} ID: 59
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1228)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:63)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(31) {HWFloat:8, 24} 31 ID: 686
+
+NodeMul * {HWFloat:8, 24} ID: 398
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:1020)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:106)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(16) {HWFloat:8, 24} 16 ID: 768
+
+NodeAdd + {HWFloat:8, 24} ID: 238
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:930)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(8) {HWFloat:8, 24} 8 ID: 785
+	FIFO(2) {HWFloat:8, 24} 2 ID: 782
+	FIFO(1) {HWFloat:8, 24} 1 ID: 708
+	FIFO(1) {HWFloat:8, 24} 1 ID: 781
+	FIFO(1) {HWFloat:8, 24} 1 ID: 783
+	FIFO(1) {HWFloat:8, 24} 1 ID: 784
+
+NodeStreamOffset stream offset: -13 {HWFloat:8, 24} ID: 610
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(12) {HWFloat:8, 24} 12 ID: 690
+
+NodeMul * {HWFloat:8, 24} ID: 134
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:1020)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:80)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(11) {HWFloat:8, 24} 11 ID: 634
+
+NodeMul * {HWFloat:8, 24} ID: 121
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.mul(DFEVar.java:1020)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:75)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(11) {HWFloat:8, 24} 11 ID: 730
+
+NodeMux MUX {HWFloat:8, 24} ID: 151
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1187)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:88)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(8) {HWFloat:8, 24} 8 ID: 691
+
+NodeCounter Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0 {HWOffsetFix:6, 0, UNSIGNED} ID: 7
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:505)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:37)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(19) {HWOffsetFix:6, 0, UNSIGNED} 19 ID: 774
+	FIFO(6) {HWOffsetFix:6, 0, UNSIGNED} 6 ID: 772
+	FIFO(2) {HWOffsetFix:6, 0, UNSIGNED} 2 ID: 773
+	FIFO(1) {HWOffsetFix:6, 0, UNSIGNED} 1 ID: 612
+	FIFO(1) {HWOffsetFix:6, 0, UNSIGNED} 1 ID: 771
+
+NodeMux MUX {HWFloat:8, 24} ID: 136
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1187)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:80)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(1) {HWFloat:8, 24} 1 ID: 663
+	FIFO(1) {HWFloat:8, 24} 1 ID: 777
+	FIFO(1) {HWFloat:8, 24} 1 ID: 778
+	FIFO(1) {HWFloat:8, 24} 1 ID: 779
+	FIFO(1) {HWFloat:8, 24} 1 ID: 780
+
+NodeMux MUX {HWFloat:8, 24} ID: 123
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.ternaryIf(DFEVar.java:1187)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:75)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(1) {HWFloat:8, 24} 1 ID: 750
+	FIFO(1) {HWFloat:8, 24} 1 ID: 786
+	FIFO(1) {HWFloat:8, 24} 1 ID: 787
+	FIFO(1) {HWFloat:8, 24} 1 ID: 788
+	FIFO(1) {HWFloat:8, 24} 1 ID: 789
+
+NodeSub - {HWFloat:8, 24} ID: 396
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.subAsRHS(DFEVar.java:1000)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:106)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWFloat:8, 24} 5 ID: 762
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 411
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.output(IO.java:707)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:109)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(127) {HWOffsetFix:1, 0, UNSIGNED} 127 ID: 770
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 394
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:105)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(126) {HWOffsetFix:1, 0, UNSIGNED} 126 ID: 769
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 236
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:101)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(106) {HWOffsetFix:1, 0, UNSIGNED} 106 ID: 721
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 320
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:103)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(90) {HWOffsetFix:1, 0, UNSIGNED} 90 ID: 761
+
+NodeInput Input(ht) {HWFloat:8, 24} ID: 20
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:44)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(2) {HWFloat:8, 24} 2 ID: 632
+
+NodeInput Input(xt) {HWFloat:8, 24} ID: 32
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:47)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(2) {HWFloat:8, 24} 2 ID: 647
+
+NodeCounter Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0 {HWOffsetFix:6, 0, UNSIGNED} ID: 5
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:505)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:36)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(9) {HWOffsetFix:6, 0, UNSIGNED} 9 ID: 775
+	FIFO(1) {HWOffsetFix:6, 0, UNSIGNED} 1 ID: 624
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 162
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:99)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(59) {HWOffsetFix:1, 0, UNSIGNED} 59 ID: 674
+
+NodeLtInlined < {HWOffsetFix:1, 0, UNSIGNED} ID: 585
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(43) {HWOffsetFix:1, 0, UNSIGNED} 43 ID: 735
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 99
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:69)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(36) {HWOffsetFix:1, 0, UNSIGNED} 36 ID: 676
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 65
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:65)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(36) {HWOffsetFix:1, 0, UNSIGNED} 36 ID: 726
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 109
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:70)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(35) {HWOffsetFix:1, 0, UNSIGNED} 35 ID: 685
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 75
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:66)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(35) {HWOffsetFix:1, 0, UNSIGNED} 35 ID: 733
+
+NodeAdd + {HWFloat:8, 24} ID: 146
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.add(DFEVar.java:930)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:87)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(1) {HWFloat:8, 24} 1 ID: 679
+
+NodeLtInlined < {HWOffsetFix:1, 0, UNSIGNED} ID: 579
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(32) {HWOffsetFix:1, 0, UNSIGNED} 32 ID: 689
+
+NodeEqInlined == {HWOffsetFix:1, 0, UNSIGNED} ID: 587
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(31) {HWOffsetFix:1, 0, UNSIGNED} 31 ID: 729
+
+NodeEqInlined == {HWOffsetFix:1, 0, UNSIGNED} ID: 578
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(20) {HWOffsetFix:1, 0, UNSIGNED} 20 ID: 680
+
+NodeEqInlined == {HWOffsetFix:1, 0, UNSIGNED} ID: 582
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(20) {HWOffsetFix:1, 0, UNSIGNED} 20 ID: 688
+
+NodeCounter Counter(NUMERIC_INCREMENTING)\nInc: 1\nReset: 0\nInit: 0 {HWOffsetFix:16, 0, UNSIGNED} ID: 8
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.CounterChain.addCounter(CounterChain.java:527)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:38)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(1) {HWOffsetFix:16, 0, UNSIGNED} 1 ID: 613
+
+NodeLtInlined < {HWOffsetFix:1, 0, UNSIGNED} ID: 558
+com.maxeler.platform.max5.manager.Max5ManagerBase.addKernel(Unknown Source)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(12) {HWOffsetFix:1, 0, UNSIGNED} 12 ID: 648
+
+NodeLt < {HWOffsetFix:1, 0, UNSIGNED} ID: 164
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:900)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:119)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(11) {HWOffsetFix:1, 0, UNSIGNED} 11 ID: 673
+
+NodeLt < {HWOffsetFix:1, 0, UNSIGNED} ID: 322
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lt(DFEVar.java:900)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:119)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(11) {HWOffsetFix:1, 0, UNSIGNED} 11 ID: 760
+
+NodeLte <= {HWOffsetFix:1, 0, UNSIGNED} ID: 240
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.lte(DFEVar.java:755)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:129)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(10) {HWOffsetFix:1, 0, UNSIGNED} 10 ID: 720
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 169
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:120)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(9) {HWOffsetFix:1, 0, UNSIGNED} 9 ID: 672
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 327
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:120)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(9) {HWOffsetFix:1, 0, UNSIGNED} 9 ID: 759
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 178
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:121)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(8) {HWOffsetFix:1, 0, UNSIGNED} 8 ID: 670
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 245
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:130)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(8) {HWOffsetFix:1, 0, UNSIGNED} 8 ID: 719
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 336
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:121)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(8) {HWOffsetFix:1, 0, UNSIGNED} 8 ID: 757
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 16
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:43)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWOffsetFix:1, 0, UNSIGNED} 5 ID: 629
+	FIFO(2) {HWOffsetFix:1, 0, UNSIGNED} 2 ID: 776
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 187
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:122)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(7) {HWOffsetFix:1, 0, UNSIGNED} 7 ID: 668
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 254
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:131)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(7) {HWOffsetFix:1, 0, UNSIGNED} 7 ID: 717
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 345
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:122)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(7) {HWOffsetFix:1, 0, UNSIGNED} 7 ID: 755
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 41
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:60)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(6) {HWOffsetFix:1, 0, UNSIGNED} 6 ID: 631
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 53
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:62)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(6) {HWOffsetFix:1, 0, UNSIGNED} 6 ID: 646
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 196
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:123)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(6) {HWOffsetFix:1, 0, UNSIGNED} 6 ID: 666
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 263
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:132)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(6) {HWOffsetFix:1, 0, UNSIGNED} 6 ID: 715
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 354
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:123)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(6) {HWOffsetFix:1, 0, UNSIGNED} 6 ID: 753
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 82
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:67)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWOffsetFix:1, 0, UNSIGNED} 5 ID: 622
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 28
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:46)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWOffsetFix:1, 0, UNSIGNED} 5 ID: 645
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 205
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:124)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWOffsetFix:1, 0, UNSIGNED} 5 ID: 664
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 272
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:133)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWOffsetFix:1, 0, UNSIGNED} 5 ID: 713
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 363
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:124)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(5) {HWOffsetFix:1, 0, UNSIGNED} 5 ID: 751
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 92
+com.maxeler.maxcompiler.v2.kernelcompiler.stdlib.core.IO.input(IO.java:542)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:68)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(4) {HWOffsetFix:1, 0, UNSIGNED} 4 ID: 637
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 214
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:125)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:100)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(4) {HWOffsetFix:1, 0, UNSIGNED} 4 ID: 662
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 279
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:134)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(4) {HWOffsetFix:1, 0, UNSIGNED} 4 ID: 711
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 372
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.sigmoid(GRURnnKernel.maxj:125)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:104)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(4) {HWOffsetFix:1, 0, UNSIGNED} 4 ID: 749
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 288
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:135)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(3) {HWOffsetFix:1, 0, UNSIGNED} 3 ID: 709
+
+NodeAnd & {HWOffsetFix:1, 0, UNSIGNED} ID: 297
+com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar.and(DFEVar.java:579)
+com.maxeler.grurnn.GRURnnKernel.tanh(GRURnnKernel.maxj:136)
+com.maxeler.grurnn.GRURnnKernel.<init>(GRURnnKernel.maxj:102)
+com.maxeler.grurnn.GRURnnManager.<init>(GRURnnManager.maxj:28)
+com.maxeler.grurnn.GRURnnManager.main(GRURnnManager.maxj:66)
+	FIFO(2) {HWOffsetFix:1, 0, UNSIGNED} 2 ID: 707
+
